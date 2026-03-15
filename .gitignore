@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+
+# Environment
+.venv/
+.env
+
+# IDE Configs
+.vscode/
+
+# OS Files
+.DS_Store
