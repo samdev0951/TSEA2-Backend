@@ -1,0 +1,21 @@
+{
+    "title": "What is JavaScript?",
+    "content": [
+        {
+            "question": "Which company originally developed JavaScript?",
+            "options": [
+                { "text": "Microsoft" },
+                { "text": "Apple" },
+                { "text": "Netscape", "correct": true },
+                { "text": "Google" }
+            ]
+        },
+        {
+            "question": "Is JavaScript a scripting or a programming language:",
+            "options": [
+                { "text": "Scripting Language", "correct": true },
+                { "text": "Programming Language" }
+            ]
+        }
+    ]
+}
