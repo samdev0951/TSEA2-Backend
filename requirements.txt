@@ -3,3 +3,4 @@ uvicorn
 mysqlclient
 python-multipart
 python-dotenv
+sqlalchemy

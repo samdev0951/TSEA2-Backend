@@ -1,12 +1,15 @@
 from fastapi import APIRouter, Depends
 
 from MySQLdb import cursors
-from database.dbconn import get_cursor
+from database.dborm import get_db
+from database.models.User import User
+from sqlalchemy.orm import Session
 
 router = APIRouter(tags=["example"], prefix="/example")
 
 @router.post("/")
 def replace_me(
-    cursor: cursors.Cursor = Depends(get_cursor)
+    db: Session = Depends(get_db)
 ):
-    return { "replace_me": True }
+    user_count = db.query(User).count()
+    return {"replace_me": user_count}
