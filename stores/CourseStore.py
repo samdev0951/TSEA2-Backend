@@ -76,30 +76,48 @@ class CourseStore:
 
     @classmethod
     def _get_course_contents(cls, course_slug: str) -> List[Any]:
-        return cls._course_contents.get(course_slug).copy()
+        course_contents = cls._course_contents.get(course_slug)
+        if course_contents == None:
+            return None
+        
+        return course_contents
 
     @classmethod
     def _get_content_contents(cls, course_slug: str, content_slug: str) -> Any:
-        return cls._content_contents.get(cls._content_contents_key(course_slug, content_slug)).copy()
+        content_contents_key = cls._content_contents_key(course_slug, content_slug)
+        if content_contents_key == None:
+            return None
+
+        content_contents = cls._content_contents.get(content_contents_key)
+        if content_contents == None:
+            return None
+        
+        return content_contents.copy()
 
     @classmethod
     def get_course(cls, slug: str) -> Dict[str, Any] | None:
-        return cls._courses.get(slug).copy()
+        course = cls._courses.get(slug)
+        if course == None:
+            return None
+        
+        return course.copy()
+    
+    @classmethod
+    def get_courses(cls) -> List[Dict[str, Any]]:
+        return list(cls._courses.values())
 
     @classmethod
     def get_course_with_contents_meta(cls, slug: str) -> Dict[str, Any] | None:
         course = cls.get_course(slug)
-        course["contents"] = cls._get_course_contents(slug)
+        if course == None:
+            return None
 
+        course["contents"] = cls._get_course_contents(slug)
         return course
     
     @classmethod
     def get_course_content(cls, course_slug: str, content_slug: str) -> Dict[str, Any]:
         return cls._get_content_contents(course_slug, content_slug)
-    
-    @classmethod
-    def get_courses() -> List[Any]:
-        return
 
     @staticmethod
     def _content_contents_key(course_slug: str, content_slug: str) -> str:
