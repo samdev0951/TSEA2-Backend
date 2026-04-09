@@ -11,7 +11,17 @@
 - Install MySQL Community Edition or Create a Docker Container
 - Create a database (the name must be the same as what you enter in the `.env` file)
 - Copy the `.env.example` and rename it to `.env`
-- Enter in your database credentials into the `.env` file
+- Enter in your database and Google Auth credentials into the `.env` file
+
+# Google Auth Setup
+
+- Go to Google Cloud Console
+- Create new project
+- Configure your Consent Screen
+- Go to APIs & Services > 'Credentials'
+- Click Create Credentials > OAuth Client ID
+- Add 'http://localhost:8000/api/auth/callback' as a Redirect URL
+- Save and copy Client ID and Client Secret to the `.env` file
 
 ## Starting the Application
 

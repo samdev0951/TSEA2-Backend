@@ -4,3 +4,6 @@ mysqlclient
 python-multipart
 python-dotenv
 sqlalchemy
+httpx
+authlib
+itsdangerous
