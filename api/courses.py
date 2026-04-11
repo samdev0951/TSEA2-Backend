@@ -7,10 +7,10 @@ from stores.CourseStore import CourseStore
 
 router = APIRouter(tags=["courses"], prefix="/courses")
 
-@router.post("/")
+@router.get("/")
 def courses():
     return CourseStore.get_courses()
 
-@router.post("/{course_slug}")
+@router.get("/{course_slug}")
 def course(course_slug: str):
     return CourseStore.get_course_with_contents_meta(course_slug)
