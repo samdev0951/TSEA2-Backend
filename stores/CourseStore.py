@@ -32,7 +32,7 @@ class CourseStore:
             course_contents = []
 
             for content_file in content_root.iterdir():
-                content_type, content_slug = content_file.name.split(":")
+                content_type, content_slug = content_file.name.split("__")
                 content_slug = os.path.splitext(content_slug)[0]
 
                 if content_type not in cls.valid_content_types:
