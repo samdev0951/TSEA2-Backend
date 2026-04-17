@@ -1,9 +1,15 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from stores.UserStore import UserStore
 
-router = APIRouter()
 
+
+router = APIRouter()
 
 class PointsUpdate(BaseModel):
     points: int
