@@ -14,3 +14,11 @@ def courses():
 @router.get("/{course_slug}")
 def course(course_slug: str):
     return CourseStore.get_course_with_contents_meta(course_slug)
+
+
+#test
+
+
+
+
+
