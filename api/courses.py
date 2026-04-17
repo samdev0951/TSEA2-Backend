@@ -16,7 +16,14 @@ def course(course_slug: str):
     return CourseStore.get_course_with_contents_meta(course_slug)
 
 
-#test
+#Endpoint: GET /api/courses/{course_id}/{content_id}
+
+@router.get("/courses/{course_id}/{content_id}")
+def get_content(course_id: str, content_id: str):
+    content = CourseStore.get_content(course_id, content_id)
+    if content is None:
+        raise HTTPException(status_code=404, detail="Content not found")
+    return content
 
 
 
