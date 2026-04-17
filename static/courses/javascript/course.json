@@ -1,4 +1,11 @@
 {
     "title": "Learn JavaScript",
-    "description": "This is a course where you learn JavaScript."
+    "description": "This is a course where you learn JavaScript.",
+    "difficulty": 1,
+    "durationHrs": 20,
+    "skills": [
+        "Foundation for JavaScript programming",
+        "Concept knowledge of object-oriented programming",
+        "Tackling problems in JavaScript code"
+    ]
 }
