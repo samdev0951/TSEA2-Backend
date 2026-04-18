@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import api.courses
 import api.auth
+import api.users
 from starlette.middleware.sessions import SessionMiddleware
 from stores.CourseStore import CourseStore
 
@@ -28,3 +29,6 @@ app.add_middleware(
 # Initialise routers
 app.include_router(api.courses.router, prefix="/api")
 app.include_router(api.auth.router, prefix="/api")
+
+app.include_router(api.users.router, prefix="/api")
+
