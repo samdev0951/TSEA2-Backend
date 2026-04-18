@@ -20,3 +20,18 @@ class UserRepository:
         db.refresh(user)
         
         return user
+    
+
+    @staticmethod
+    def update_points(db: Session, id: str, points: int):
+        user = db.query(User).filter(User.id == id).first()
+ 
+        user.points = points
+ 
+        db.commit()
+        db.refresh(user)
+ 
+        return user
+
+
+
