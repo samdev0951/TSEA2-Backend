@@ -22,12 +22,15 @@ def course(course_slug: str):
 
 @router.get("/{course_id}/{content_id}")
 def get_content(course_id: str, content_id: str):
+    course = CourseStore.get_course(course_id)
+    if course is None:
+        raise HTTPException(status_code=404, detail="Course not found")
+
     content = CourseStore.get_course_content(course_id, content_id)
     if content is None:
         raise HTTPException(status_code=404, detail="Content not found")
-    return content
 
-# 
-
-
-
+    return {
+        "course": course,
+        "content": content
+    }

@@ -31,7 +31,10 @@ class CourseStore:
 
             course_contents = []
 
-            for content_file in content_root.iterdir():
+            content_files = list(content_root.iterdir())
+            course["contentLength"] = len(content_files)
+
+            for i, content_file in enumerate(content_files):
                 content_type, content_slug = content_file.name.split("__")
                 content_slug = os.path.splitext(content_slug)[0]
 
@@ -41,7 +44,17 @@ class CourseStore:
                 if content_type == "lesson" and not content_file.is_dir():
                     raise ValueError(f"Lesson '{content_slug}' must be in a directory format.")
 
-                content_meta = { "type": content_type, "slug": content_slug }
+                content_meta = { "type": content_type, "slug": content_slug, "position": i + 1, "previousSlug": None, "nextSlug": None }
+
+                if i + 1 < len(content_files):
+                    next_file = content_files[i + 1]
+                    _, next_slug = next_file.name.split("__")
+                    content_meta["nextSlug"] = os.path.splitext(next_slug)[0]
+
+                if i - 1 >= 0:
+                    prev_file = content_files[i - 1]
+                    _, prev_slug = prev_file.name.split("__")
+                    content_meta["previousSlug"] = os.path.splitext(prev_slug)[0]
 
                 if content_file.is_dir():
                     content_meta = content_meta | cls._load_json(content_file / cls.content_file_title)
@@ -54,7 +67,7 @@ class CourseStore:
                 course_contents.append(stripped_content)
 
                 cls._add_content_contents(course_slug, content_slug, content_meta)
-            
+                        
             cls._add_course_contents(course_slug, course_contents)
             cls._add_course(course_slug, course)
 
