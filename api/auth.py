@@ -28,7 +28,7 @@ async def auth_callback(request: Request, db: Session = Depends(get_db)):
         user = UserRepository.create(db, email, google_id)
     
     request.session["user_id"] = user.id
-    return RedirectResponse(url=config.FRONTEND_URL + "/courses")
+    return RedirectResponse(url=config.FRONTEND_URL + "/src/pages/courseSelection.html")
 
 @router.get("/me")
 async def get_current_user(request: Request, db: Session = Depends(get_db)):
