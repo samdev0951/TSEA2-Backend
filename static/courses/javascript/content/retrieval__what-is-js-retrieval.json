@@ -1,15 +1,15 @@
 {
-    "title": "What is JavaScript?",
-    "content": [
-        {
-            "isCode": true,
-            "question": "Assign a constant variable to the value 5.",
-            "retrieval": "%blank% x = %blank%;",
-            "answers": ["const", "5"]
-        },
-        {
-            "retrieval": "%blank% is a %blank% language.",
-            "answers": ["JavaScript", ["scripting", "script"]]
-        }
-    ]
+  "title": "What is JavaScript?",
+  "content": [
+    {
+      "question": "Assign a constant variable to the value 5.",
+      "retrieval": "%blank% x = %blank%;",
+      "answers": ["const", "5"]
+    },
+    {
+      "question": "Fill in the blanks.",
+      "retrieval": "%blank% is a %blank% language.",
+      "answers": ["JavaScript", ["scripting", "script"]]
+    }
+  ]
 }
