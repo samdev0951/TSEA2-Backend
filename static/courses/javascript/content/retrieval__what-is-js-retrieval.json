@@ -9,7 +9,7 @@
     {
       "question": "Fill in the blanks.",
       "retrieval": "%blank% is a %blank% language.",
-      "answers": ["JavaScript", ["scripting", "script"]]
+      "answers": ["JavaScript", "scripting"]
     }
   ]
 }
