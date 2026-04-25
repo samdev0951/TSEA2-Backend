@@ -30,6 +30,10 @@ async def auth_callback(request: Request, db: Session = Depends(get_db)):
     request.session["user_id"] = user.id
     return RedirectResponse(url=config.FRONTEND_URL + "/src/pages/courseSelection.html")
 
+@router.delete("/logout")
+async def login(request: Request):
+    request.session["user_id"] = None
+
 @router.get("/me")
 async def get_current_user(request: Request, db: Session = Depends(get_db)):
     user_id = request.session.get("user_id")
