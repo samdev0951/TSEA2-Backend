@@ -1,0 +1,35 @@
+{
+  "title": "Computer Hardware & Components",
+  "content": [
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "Mobile devices are powered by a %blank%.",
+      "answers": ["battery"]
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "The %blank% connects all of the Computer Components with microscopic %blank%",
+      "answers": ["motherboard", "wires"]
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "The %blank% is forgotten when the Computer is powered off.",
+      "answers": ["RAM"]
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "Hard Drives have a longer lifespan than SSDs because they are %blank%.",
+      "answers": ["mechanical"]
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "The CPU has it's own, ultra-fast storage known as %blank%",
+      "answers": ["registers"]
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "Graphics Cards hold temporary information in the %blank% which is useful for rapidly processing %blank% shapes.",
+      "answers": ["VRAM", "3D"]
+    }
+  ]
+}

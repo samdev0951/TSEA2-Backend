@@ -1,0 +1,12 @@
+{
+  "title": "Computer Science Fundamentals",
+  "description": "The fundamentals of Computer Science are the backbone behind every successful Computer Scientist. Learning these concepts will help you develop a proper understanding of deeper concepts without getting lost in the abstract details. In this course you will learn the different layers that make up a Computer System from the Physical Level to the Application Level.",
+  "difficulty": 1,
+  "durationHrs": 1,
+  "skills": [
+    "Understand the different layers that make up a Computer System",
+    "Apply practical understanding of physical computer components",
+    "Understand the role of the operating system and system software",
+    "Identify the role of application software and its connection to the hardware"
+  ]
+}

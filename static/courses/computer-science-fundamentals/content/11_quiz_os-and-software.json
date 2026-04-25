@@ -1,0 +1,68 @@
+{
+  "title": "Operating Systems and Software",
+  "content": [
+    {
+      "question": "Which is main the purpose of Application Software?",
+      "options": [
+        { "text": "To teach the user how to use the Operating System" },
+        { "text": "To send instructions to the CPU" },
+        { "text": "To manage processes on the Operating System" },
+        {
+          "text": "To solve a specific problem or perform specific tasks",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is not an operating system?",
+      "options": [
+        { "text": "Google Chrome", "correct": true },
+        { "text": "Android" },
+        { "text": "Windows" },
+        { "text": "Linux" }
+      ]
+    },
+    {
+      "question": "True or False: There must be an operating system for the user to interact with the computer.",
+      "options": [{ "text": "True" }, { "text": "False", "correct": true }]
+    },
+    {
+      "question": "How does the Operating System find an Application?",
+      "options": [
+        { "text": "The user must enter the location" },
+        { "text": "Reading the RAM" },
+        { "text": "Reading the file system", "correct": true },
+        {
+          "text": "They are built into the Operating System when it is installed"
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is the purpose of a Programming Language?",
+      "options": [
+        { "text": "To execute code written by a programmer" },
+        {
+          "text": "To provide a human readable syntax that can be compiled into machine code",
+          "correct": true
+        },
+        {
+          "text": "To replace the need for hardware in a Computer System"
+        },
+        {
+          "text": "To store data permanently without any hardware support"
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is an Operating System NOT responsible for?",
+      "options": [
+        { "text": "Hardware" },
+        { "text": "User Interface" },
+        { "text": "Internet Content", "correct": true },
+        { "text": "Process Management" },
+        { "text": "Memory Management" },
+        { "text": "File System" }
+      ]
+    }
+  ]
+}

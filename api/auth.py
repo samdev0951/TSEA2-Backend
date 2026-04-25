@@ -32,7 +32,8 @@ async def auth_callback(request: Request, db: Session = Depends(get_db)):
 
 @router.delete("/logout")
 async def login(request: Request):
-    request.session["user_id"] = None
+    request.session.clear()
+    return { "success": True }
 
 @router.get("/me")
 async def get_current_user(request: Request, db: Session = Depends(get_db)):

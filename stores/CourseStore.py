@@ -32,10 +32,12 @@ class CourseStore:
             course_contents = []
 
             content_files = list(content_root.iterdir())
+
+            course["slug"] = course_slug
             course["contentLength"] = len(content_files)
 
             for i, content_file in enumerate(content_files):
-                content_type, content_slug = content_file.name.split("__")
+                _, content_type, content_slug = content_file.name.split("_")
                 content_slug = os.path.splitext(content_slug)[0]
 
                 if content_type not in cls.valid_content_types:
@@ -48,12 +50,12 @@ class CourseStore:
 
                 if i + 1 < len(content_files):
                     next_file = content_files[i + 1]
-                    _, next_slug = next_file.name.split("__")
+                    next_slug = next_file.name.split("_").pop()
                     content_meta["nextSlug"] = os.path.splitext(next_slug)[0]
 
                 if i - 1 >= 0:
                     prev_file = content_files[i - 1]
-                    _, prev_slug = prev_file.name.split("__")
+                    prev_slug = prev_file.name.split("_").pop()
                     content_meta["previousSlug"] = os.path.splitext(prev_slug)[0]
 
                 if content_file.is_dir():
