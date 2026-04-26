@@ -18,7 +18,7 @@
     },
     {
       "question": "Complete this sentence:",
-      "retrieval": "Hard Drives have a longer lifespan than SSDs because they are %blank%.",
+      "retrieval": "SSDs have a longer lifespan than Hark Disks because they are not %blank%.",
       "answers": ["mechanical"]
     },
     {
