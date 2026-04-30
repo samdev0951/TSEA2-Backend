@@ -4,32 +4,38 @@
     {
       "question": "Complete this sentence:",
       "retrieval": "Mobile devices are powered by a %blank%.",
-      "answers": ["battery"]
+      "answers": ["battery"],
+      "points": 5
     },
     {
       "question": "Complete this sentence:",
       "retrieval": "The %blank% connects all of the Computer Components with microscopic %blank%",
-      "answers": ["motherboard", "wires"]
+      "answers": ["motherboard", "wires"],
+      "points": 5
     },
     {
       "question": "Complete this sentence:",
       "retrieval": "The %blank% is forgotten when the Computer is powered off.",
-      "answers": ["RAM"]
+      "answers": ["RAM"],
+      "points": 5
     },
     {
       "question": "Complete this sentence:",
       "retrieval": "SSDs have a longer lifespan than Hark Disks because they are not %blank%.",
-      "answers": ["mechanical"]
+      "answers": ["mechanical"],
+      "points": 5
     },
     {
       "question": "Complete this sentence:",
       "retrieval": "The CPU has it's own, ultra-fast storage known as %blank%",
-      "answers": ["registers"]
+      "answers": ["registers"],
+      "points": 5
     },
     {
       "question": "Complete this sentence:",
       "retrieval": "Graphics Cards hold temporary information in the %blank% which is useful for rapidly processing %blank% shapes.",
-      "answers": ["VRAM", "3D"]
+      "answers": ["VRAM", "3D"],
+      "points": 5
     }
   ]
 }

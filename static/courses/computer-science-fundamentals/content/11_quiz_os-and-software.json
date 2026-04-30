@@ -11,7 +11,8 @@
           "text": "To solve a specific problem or perform specific tasks",
           "correct": true
         }
-      ]
+      ],
+      "points": 5
     },
     {
       "question": "Which of the following is not an operating system?",
@@ -20,7 +21,8 @@
         { "text": "Android" },
         { "text": "Windows" },
         { "text": "Linux" }
-      ]
+      ],
+      "points": 5
     },
     {
       "question": "True or False: There must be an operating system for the user to interact with the computer.",
@@ -35,7 +37,8 @@
         {
           "text": "They are built into the Operating System when it is installed"
         }
-      ]
+      ],
+      "points": 5
     },
     {
       "question": "Which of the following is the purpose of a Programming Language?",
@@ -51,7 +54,8 @@
         {
           "text": "To store data permanently without any hardware support"
         }
-      ]
+      ],
+      "points": 5
     },
     {
       "question": "Which of the following is an Operating System NOT responsible for?",
@@ -62,7 +66,8 @@
         { "text": "Process Management" },
         { "text": "Memory Management" },
         { "text": "File System" }
-      ]
+      ],
+      "points": 5
     }
   ]
 }
