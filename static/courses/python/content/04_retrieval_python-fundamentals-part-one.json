@@ -1,0 +1,41 @@
+{
+  "title": "Python Fundamentals - Part 1",
+  "content": [
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "Variables are named containers for %blank% values.",
+      "answers": ["storing"],
+      "points": 5
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "Type %blank% is when you explicitly convert a value from one data type to another.",
+      "answers": ["casting"],
+      "points": 5
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "%blank% flow refers to the order in which statements are executed.",
+      "answers": ["Control"],
+      "points": 5
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "'%blank%' statements evaluate a condition to either true or false. If the condition is true, the code %blank% the 'if' block is executed.",
+      "answers": ["if", "inside"],
+      "points": 5
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "The code block inside %blank% is only executed when the %blank% called.",
+      "answers": ["function", "function"],
+      "points": 5
+    },
+    {
+      "question": "Complete this sentence:",
+      "retrieval": "A %blank% can be used to organize code by separating it into different files. ",
+      "answers": ["module"],
+      "points": 5
+    }
+  ]
+}

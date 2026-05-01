@@ -26,7 +26,8 @@
     },
     {
       "question": "True or False: There must be an operating system for the user to interact with the computer.",
-      "options": [{ "text": "True" }, { "text": "False", "correct": true }]
+      "options": [{ "text": "True" }, { "text": "False", "correct": true }],
+      "points": 5
     },
     {
       "question": "How does the Operating System find an Application?",

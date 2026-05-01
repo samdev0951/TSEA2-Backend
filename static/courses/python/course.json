@@ -1,0 +1,11 @@
+{
+  "title": "Python Fundamentals",
+  "description": "An introduction to the core principles of Python. ",
+  "difficulty": 2,
+  "durationHrs": 2,
+  "skills": [
+    "Understanding of the core principles of Python",
+    "Practical knowledge of error handling and debugging",
+    "Basic knowledge writing clean and readable code"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Python Fundamentals - Part 2",
+  "content": [
+    {
+      "question": "Data structures are broadly classified as: ",
+      "options": [
+        { "text": "Linear and Non-linear", "correct": true },
+        { "text": "Static and Dynamic" },
+        { "text": "Primitive and Non-Primitive" },
+        { "text": "None of the above"}
+      ],
+      "points": 5
+    },
+    {
+      "question": "Which one of the options is NOT a valid file access mode?",
+      "options": [
+        { "text": "r+"},
+        { "text": "a" },
+        { "text": "rw", "correct": true },
+        { "text": "w+" }
+      ],
+      "points": 5
+    },
+    {
+      "question": "True or False: Encapsulation, Abstraction, Polymorphism and Compilation are the four pillars of OOP.",
+      "options": [{ "text": "True" }, { "text": "False", "correct": true }],
+      "points": 5
+    },
+    {
+      "question": "Which one of these options show a syntax error?",
+      "options": [
+        { "text": "x = 5\nprint(x)" },
+        { "text": "print(10 / 2)" },
+        { "text": "print('Hello World'", "correct": true },
+        {
+          "text": "if x == 5:\n  print(x)"
+        }
+      ],
+      "points": 5
+    }
+  ]
+}

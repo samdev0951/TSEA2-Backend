@@ -1,0 +1,10 @@
+### Python - Object-Oriented Programming
+
+Python is one of the many languages that support OOP. OOP stands for Object-Oriented Programming, and it’s based on the concepts of objects and classes. Classes are essentially blueprints, and objects are unique instances created from those blueprints. For example, I can create a class called Cat and define attributes that apply to all objects, like age, color, and breed. I can then create an object and define specific values for those attributes - for example, age: 3, color: black, and breed: Persian.
+
+OOP revolves around 4 core principles, also referred to as the “four pillars of OOP”. This includes:
+
+ - Encapsulation - This principle allows you to restrict access to certain attributes and methods from the outside world. There are methods called “getters” and “setters” that can be used to interact with sensitive data in a protected environment.
+ - Abstraction - Abstraction means to hide complex implementation details from the user. Let’s say you have a class CoffeeMachine with several methods inside it, and you only need the method that produces a result or output.
+ - Polymorphism - The name may sound intimidating, but the idea is actually simple. You define a method in a class whose functionality can be overridden in other classes. For example, you define an Animal class and two subclasses: Cat and Lion. In the animal class, you include a function that returns the sound an animal makes. This function can be overwritten in other classes, so you can modify it in the Cat class to return “Meow” and modify the Lion class to return “Roar”.
+ - Inheritance - Inheritance, as the word suggests, ‘inherits’ all the properties and behaviours of another class. These classes are usually in a parent-child relationship, where the child has access to everything in the parent class. 
